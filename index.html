@@ -3,11 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./reset.css" />
-    <link rel="stylesheet" href="./styles.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./assets/styles/reset.css" />
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <title>25:00 #1</title>
   </head>
   <body>
-    fdhd
+    <div class="container bg-red">
+      <div class="wrap">
+        <div class="title-box">
+          <h1>Pomodoro</h1>
+        </div>
+        <div class="progress-box">
+          <span class="ing"></span>
+          <span class="left"></span>
+        </div>
+        <div class="inner">
+          <div class="pomodoro-box">
+            <div class="change-btns">
+              <button class="active">Pomodoro</button>
+              <button>Short Break</button>
+              <button>Long Break</button>
+            </div>
+            <div class="count-box bold"><span>25</span>:<span>00</span></div>
+            <div class="control-btns">
+              <button class="btn bold start" id="startBtn">START</button>
+              <!-- <button class="btn bold pause" id="pauseBtn">PAUSE</button> -->
+              <!-- <button class="next"><img src="./assets/images/next.png" alt="next" /></button> -->
+            </div>
+          </div>
+          <div class="take-box">
+            <button>#1</button>
+            <p>Time to focus!</p>
+          </div>
+          <div class="task-box">
+            <div class="task-title">
+              <span class="bold">Tasks</span>
+              <button><img src="./assets/images/threedots.png" alt="setting" /></button>
+            </div>
+            <div class="add-box">
+              <button class="add-btn bold"><img src="./assets/images/plus-circle.png" alt="plus" />Add Task</button>
+            </div>
+            <div class="text-box">
+              <div class="input-box">
+                <input type="text" name="" id="" />
+              </div>
+              <div class="confirm-box"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
