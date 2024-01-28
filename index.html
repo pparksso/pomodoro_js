@@ -8,7 +8,7 @@
     <title>25:00 #1</title>
   </head>
   <body>
-    <div class="container bg-red">
+    <main class="container bg-red" id="main">
       <div class="wrap">
         <div class="title-box">
           <h1>Pomodoro</h1>
@@ -19,12 +19,12 @@
         </div>
         <div class="inner">
           <div class="pomodoro-box">
-            <div class="change-btns">
-              <button class="active">Pomodoro</button>
-              <button>Short Break</button>
-              <button>Long Break</button>
+            <div class="change-btns" id="changeBtns">
+              <button id="pomodoroBtn" class="active">Pomodoro</button>
+              <button id="shortBtn">Short Break</button>
+              <button id="longBtn">Long Break</button>
             </div>
-            <div class="count-box bold"><span>25</span>:<span>00</span></div>
+            <div class="count-box bold"><span id="min">25</span>:<span id="sec">00</span></div>
             <div class="control-btns">
               <button class="btn bold start" id="startBtn">START</button>
               <!-- <button class="btn bold pause" id="pauseBtn">PAUSE</button> -->
@@ -71,6 +71,8 @@
           </div>
         </div>
       </div>
-    </div>
+    </main>
+    <script src="./js/constants.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
