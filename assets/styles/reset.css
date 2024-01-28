@@ -57,3 +57,9 @@ button {
   background: none;
   cursor: pointer;
 }
+input {
+	outline: none;
+	border: none;
+	padding: none;
+	font-family: inherit;
+}
