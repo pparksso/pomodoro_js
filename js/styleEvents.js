@@ -1,17 +1,21 @@
+function updateModeStyles(className, textColor, time) {
+  mainContainer.className = `container ${className}`;
+  startBtn.style.color = textColor;
+  min.innerText = countMin(time);
+}
+
 function changeModeHandler(e) {
   const name = e.target.id;
-  if (name === 'shortBtn') {
-    mainContainer.className = 'container bg-green';
-    startBtn.style.color = '#38858A';
-    min.innerHTML = countMin(TIME.SHORT);
-  } else if (name === 'longBtn') {
-    mainContainer.className = 'container bg-blue';
-    startBtn.style.color = '#397097';
-    min.innerHTML = countMin(TIME.LONG);
-  } else {
-    mainContainer.className = 'container bg-red';
-    startBtn.style.color = '#ba4949';
-    min.innerHTML = countMin(TIME.POMODORO);
+  switch (name) {
+    case 'shortBtn':
+      updateModeStyles('bg-green', '#38858A', TIME.SHORT);
+      break;
+    case 'longBtn':
+      updateModeStyles('bg-blue', '#397097', TIME.LONG);
+      break;
+    default:
+      updateModeStyles('bg-red', '#ba4949', TIME.POMODORO);
+      break;
   }
 }
 

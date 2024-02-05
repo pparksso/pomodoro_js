@@ -18,3 +18,9 @@ const countMin = (min) => {
     return min;
   }
 };
+
+// 1. task 추가 기능
+// { id: -, name: -, count: -, endCount: - }
+// (pomodoro 1 + short 1) * 4 = 4count => long 1
+
+//
