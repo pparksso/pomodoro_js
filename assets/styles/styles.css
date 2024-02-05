@@ -160,6 +160,7 @@ body {
   right: 0;
   z-index: 1;
   transform: translateY(10px);
+  display: none;
   ul {
     border-radius: 4px;
     background-color: #fff;
@@ -176,6 +177,9 @@ body {
         }
       }
     }
+  }
+  &.on {
+    display: block;
   }
 }
 .add-box .add-btn {
@@ -199,6 +203,7 @@ body {
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 20px, rgba(0, 0, 0, 0.1) 0px 3px 6px;
   animation: 0.1s ease-in-out 0s 1 normal none running expand;
+  display: none;
 }
 .text-box .input-box {
   padding: 30px 20px;

@@ -39,19 +39,21 @@
             <div class="task-title">
               <span class="bold">Tasks</span>
               <div class="set-btn">
-                <button><img src="./assets/images/threedots.png" alt="setting" /></button>
-                <!-- <div class="setting-list">
+                <button id="setBtn"><img src="./assets/images/threedots.png" alt="setting" /></button>
+                <div class="setting-list" id="settingList">
                   <ul>
                     <li><button>Clear finished tasks</button></li>
                     <li><button>Clear all tasks</button></li>
                   </ul>
-                </div> -->
+                </div>
               </div>
             </div>
             <div class="add-box">
-              <button class="add-btn bold"><img src="./assets/images/plus-circle.png" alt="plus" />Add Task</button>
+              <button class="add-btn bold" id="addTaskBtn">
+                <img src="./assets/images/plus-circle.png" alt="plus" />Add Task
+              </button>
             </div>
-            <!-- <div class="text-box">
+            <div class="text-box" id="textBox">
               <div class="input-box">
                 <input type="text" name="" id="" placeholder="What are you working on?" />
                 <p class="bold">Est Pomodoros</p>
@@ -64,15 +66,16 @@
                 </div>
               </div>
               <div class="confirm-box">
-                <button class="cancle bold">Cancel</button>
+                <button class="cancle bold" id="cancleBtn">Cancel</button>
                 <button class="save bold">Save</button>
               </div>
-            </div> -->
+            </div>
           </div>
         </div>
       </div>
     </main>
     <script src="./js/constants.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/styleEvents.js"></script>
   </body>
 </html>
